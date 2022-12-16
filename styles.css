@@ -1,0 +1,87 @@
+html {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+background-color: #F0FFFF
+}
+
+    .container {
+        width: 100%;
+        padding: 10px;
+        /* Added a max-width so that this one style block works on all devices */
+        max-width: 1000px;
+        /* Margin to center the container when it's not the full width */
+        margin: 0 auto;
+    }
+.iframe{
+  max-width: 1200px;
+}
+
+
+#mapgif{
+  width: 100%;
+padding: 10px;
+/* Added a max-width so that this one style block works on all devices */
+max-width: 1000px;
+/* Margin to center the container when it's not the full width */
+margin: 0 auto;
+
+}
+.link{color:blue}
+.link:hover{color:#000000}
+a:link {text-decoration: none;}
+
+#Maliya_Strike{
+  width: 100%;
+  Padding: 5px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+figcaption {
+    font-size: 0.9em;
+    padding: 10px;
+    font-style: italic;
+    color: grey;
+    text-align: center;}
+
+h1{font-family: Georgia, serif;
+font-size:  30px;
+font-weight: bold;
+text-align: center;
+color: #000000}
+
+h2{font-family: Georgia, serif;
+font-size: 15px;
+font-style: italic;
+font-weight:lighter;
+text-align: center;
+color:#696969}
+
+body{margin-right: 10%;
+margin-left: 10%;
+font-size: 18px}
+
+.lede {text-align: justify;}
+
+@media(min-width: 681px) {
+
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    /* Since you seem to want the flex elements to stack as normal on mobile, I just didn't define the flex
+     * styles until tablet. Less code that way
+     */
+     .flex {
+         /* Flex box styles go on the flex box element */
+         display: flex;
+         justify-content: space-between;
+     }
+
+
+    /* How you want content to flex goes on the elements that do the flexing */
+    .img_holder {
+        /* There are many ways to handle sizing, but flex-basis is the one that I like best for control.
+         * There are three elements so I made it 30%. With justify content set to space between, the extra 3% per element will go to negative space
+         * serving as gutters */
+        flex-basis: 50%;
+        font-size: 1.3em;
+      }
